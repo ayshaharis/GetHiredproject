@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Gethired';
+  background:string='assets/images/form.jpg';
+  
 }

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.pas  .btn{
+   
+  display: inline-block;
+  background-color: rgb(36, 85, 97);
+  opacity: 0.69;
+  width: 45%;
+  
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* .fas .btn{
+    display: inline-block;
+    top: 50%;
+    color: aliceblue;
+    background-color: rgb(36, 85, 97);
+    opacity: 0.69;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    margin: 4px 2px;
+    margin-left: 50%;
+    margin-top: 20%;
+
+
+} */
+
+.fas .btn{
+    display: inline-block;
+    background-color: rgb(36, 85, 97);
+    opacity: 0.69;
+    width: 45%;
+    margin:4px 2px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    user-select: none;
+}
+.center h1{
+    color: darkslategrey;
+    opacity: 0.7;
+    font-size: 50px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.center h2{
+    color: darkslategrey;
+    opacity: 0.7;
+    font-size: 70px;
+    font-weight: bolder;
+    width: 880px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.center .buttons{
+    margin:35px 280px;
+    
+}
+.buttons .btn{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgb(71, 117, 117);
+    
+    cursor: pointer;
+    outline: none;
+    margin-left: 25px;
+text-decoration: none;
+border-radius: 25px;
+color: white;
+}
+
+
+ .buttons .btn1{
+   height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgb(71, 117, 117);
+    border: 1px solid darkseagreen;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border-radius: 25px;
+    text-decoration: none;
+}
