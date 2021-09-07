@@ -1,15 +1,34 @@
 const express=require('express');
-const SignupData=require('./src/models/signupdata')
-const cors=require('cors');
-var bodyparser=require('body-parser');
 const app=express();
-app.use(cors());
-app.use(bodyparser.json())
+const mongoose=require('mongoose');
+
+//to store database connectivity link
+const dotenv=require('dotenv');
+dotenv.config();
+//connect to db
+mongoose.connect(process.env.DB_CONNECT,
+{ useNewUrlParser: true,useUnifiedTopology: true },()=>console.log("connected to db"));
+//import routes
+const servicesRoutes=require('./routes/servicesRoutes');
+const signupRoutes=require('./routes/signupRoutes');
+const userRoutes=require("./routes/user");
+const listingRoutes=require("./routes/listing");
+
+//middewares
+app.use(express.json());
+
+//Route middlewares
+
+app.use('/api/services',servicesRoutes);
+app.use('/api/signup',signupRoutes);
+app.use("/api/user",userRoutes);
+app.use("/api/listing",listingRoutes);
 
 
 
 
 
 
-app.listen(3000,()=>console.log("server up and running on port 4000!"));
+
+app.listen(3000,()=>console.log("server up and running on port 3000!"));
 module.exports=app;

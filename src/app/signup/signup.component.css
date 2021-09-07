@@ -26,7 +26,7 @@ input{
     /* background: rgba(255, 255, 255, 0.1); */
     outline: none;
     border: none;
-    border-bottom: 1px dotted #fff;
+    /* border-bottom: 1px dotted #fff; */
     color: rgb(0, 0, 0);
     border-radius: 5px;
     margin:5px;
@@ -37,6 +37,7 @@ input{
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    padding-top: 20px;
     margin-top: 30px;
     outline: none;
     border: none;
@@ -50,6 +51,11 @@ input{
 
 }
 
+
+
+
+
+
 .button:hover{
     background: #1c1e1f;
     opacity: 0.7;
@@ -59,3 +65,4 @@ a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+

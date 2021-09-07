@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
   {path:'aboutus',component:AboutusComponent},
-  {path:'findaservice',component:FindaserviceComponent},
+  {path:'findaservice',component:ServicesComponent},
   {path:'postaservice',component:PostaserviceComponent}
 ];
 

@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb+srv://userone:userone@gethiredfiles.bpm79.mongodb.net/gethired?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://userone:<userone>@cluster0.06h36.mongodb.net/gethired?retryWrites=true&w=majority');
 const Schema=mongoose.Schema;
 
 var SignupSchema=new Schema({
@@ -10,5 +10,5 @@ var SignupSchema=new Schema({
 
 });
 
-var SignUpData= mongoose.model('SignUp',SignupSchema);
+var SignUpData= mongoose.model('signup',SignupSchema);
 module.exports=SignUpData;

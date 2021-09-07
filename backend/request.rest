@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/register/
+Content-Type: application/json
+{
+    "name":"aysha",
+    "phone":"phone",
+    "password":"password",
+    "confirmpassword":"password"
+    
+}
+
+###
+
+POST http://localhost:3000/api/listing
+Content-Type: application/json
+{
+    "title":"wswodw",
+    "price":"1000",
+    "locality":"kozhikode",
+    "details":"checkingpost"
+    
+}
+###
+
+ POST http://localhost:3000/api/listing/
+ Content-Type: application/json
+ {
+    "title":"demo example",
+    "price":"100000",
+    "locality":"Kozhikode",
+    "details":"another random"
+}
