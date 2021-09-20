@@ -1,0 +1,26 @@
+
+<div class="container">
+<h2>PLUMBERS </h2>
+<p></p>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Firstname</th>
+      <th>Phone Number</th>
+      <th>Place</th>
+    </tr>
+  </thead>
+
+  <tbody *ngFor="let person of httpdata">
+    <tr>
+      <td>{{person.name}}</td>
+      <td>{{person.phone}}</td>
+      <td>{{person.location}}</td>
+      <td><button type="button" class="btn btn-secondary" routerLink='/person._id' >Know more</button></td>  
+    </tr>
+    
+  </tbody>
+</table>
+
+</div>

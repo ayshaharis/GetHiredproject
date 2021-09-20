@@ -1,0 +1,26 @@
+
+<div class="container">
+    <h2>CARPENTERS </h2>
+    <p></p>
+    <br>
+    
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>Firstname</th>
+          <th>Phone Number</th>
+          <th>Place</th>
+        </tr>
+      </thead>
+    
+      <tbody *ngFor="let person of httpdata">
+        <tr>
+          <td>{{person.name}}</td>
+          <td>{{person.phone}}</td>
+          <td>{{person.location}}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+    </div>

@@ -9,10 +9,16 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { FindaserviceComponent } from './findaservice/findaservice.component';
+
 import { PostaserviceComponent } from './postaservice/postaservice.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { ElectricalComponent } from './electrical/electrical.component';
+import {HttpClientModule} from '@angular/common/http';
+import { PlumbingComponent } from './plumbing/plumbing.component';
+import { SingleworkerComponent } from './singleworker/singleworker.component';
+import { CarpentryComponent } from './carpentry/carpentry.component';
+import { PhotographyComponent } from './photography/photography.component'
 
 
 @NgModule({
@@ -24,14 +30,19 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     NavbarComponent,
     AboutusComponent,
-    FindaserviceComponent,
-    PostaserviceComponent
+  
+    PostaserviceComponent,
+    ElectricalComponent,
+    PlumbingComponent,
+    SingleworkerComponent,
+    CarpentryComponent,
+    PhotographyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-  
     ReactiveFormsModule,
+    HttpClientModule
    
   ],
   providers: [],

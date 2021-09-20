@@ -6,3 +6,6 @@ const ListingSchema=new mongoose.Schema({
     details:String
 });
 module.exports=mongoose.model("Listing",ListingSchema);
+
+
+

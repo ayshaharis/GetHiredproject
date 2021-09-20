@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express();
 const mongoose=require('mongoose');
-
+const cors=require('cors');
 //to store database connectivity link
 const dotenv=require('dotenv');
 dotenv.config();
@@ -9,13 +9,14 @@ dotenv.config();
 mongoose.connect(process.env.DB_CONNECT,
 { useNewUrlParser: true,useUnifiedTopology: true },()=>console.log("connected to db"));
 //import routes
-const servicesRoutes=require('./routes/servicesRoutes');
+const servicesRoutes=require('./routes/services');
 const signupRoutes=require('./routes/signupRoutes');
 const userRoutes=require("./routes/user");
 const listingRoutes=require("./routes/listing");
 
 //middewares
 app.use(express.json());
+app.use(cors());
 
 //Route middlewares
 
